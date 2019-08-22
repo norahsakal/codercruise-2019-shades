@@ -73,7 +73,7 @@ def upload_file():
 
 def predict_img(image_from_frontend):
 
-	# Choose same image size as the model is trained on
+	# Choose the same image size as the model is trained on
 	image_size = (<your_image_size_height>,<your_image_size_width>)
 
 	# Add your available classes for predicition
