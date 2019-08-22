@@ -28,7 +28,7 @@ json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 
 # Load weights into a new model
-loaded_model.load_weights("new_model.h5")
+loaded_model.load_weights("your_model.h5")
 
 # Compile the loaded model
 loaded_model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
@@ -74,7 +74,7 @@ def upload_file():
 def predict_img(image_from_frontend):
 
 	# Choose same image size as the model is trained on
-	image_size = (<your size>,<your size>)
+	image_size = (<your_image_size_height>,<your_image_size_width>)
 
 	# Add your available classes for predicition
 	classes = {0:'your_class_name_1', 1:'your_class_name_2', 2:'your_class_name_3'}
