@@ -34,23 +34,27 @@ data/
         img002.jpg
         ...
 ```  
-### 2.2 Enter the number of classes according to the number of image classes you are using
+### 2.2 Enter the batch size in base 2
+```
+batch_size = <choose_batch_size_expressed_in_base_2>
+```
+### 2.3 Enter the number of classes according to the number of image classes you are using
 ```
 classes = <your classes>
 ```   
-
-### 2.3 Enter the number of training and validation samples according to your dataset
-```
-number_of_images_training = <your number of training images>
-number_of_images_validation = <your number of validation images>
-```  
-
 ### 2.4 Decide on which image size to train on
 ```
-image_size = (<your size>,<your size>)
+image_size_height = <your_image_height>
+image_size_width = <your_image_width>
+```
+
+### 2.5 Enter the number of training and validation samples according to your dataset
+```
+number_of_images_training = <your_number_of_training_images>
+number_of_images_validation = <your_number_of_validation_images>
 ```  
 
-### 2.5 Save model and architecture
+### 2.6 Save model and architecture
 ```
 model_json = model.to_json()
 with open("model.json", "w") as json_file:
@@ -60,7 +64,7 @@ with open("model.json", "w") as json_file:
 model.save_weights('your_model.h5')
 ```  
 
-### 2.6 Evaluate the model by predicting on a new unseen image
+### 2.7 Evaluate the model by predicting on a new unseen image
 ```
 prediction = loaded_model.predict(img_for_prediction)
 ```  
@@ -74,7 +78,7 @@ classes = {'our_class_name_1': 0, 'our_class_name_2': 1, 'our_class_name_3': 2 .
 
 ### 3.2 Define same image size as network is trained on
 ```
-image_size = (<your size>,<your size>)
+image_size = (<image_size_height>,<image_size_width>)
 ```  
 
 ## 5. Run the backend for predicitions
