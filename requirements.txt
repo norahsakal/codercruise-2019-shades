@@ -5,7 +5,7 @@ jupyter==1.0.0
 Keras==2.2.4
 Keras-Applications==1.0.6
 numpy==1.15.4
-opencv-python==3.4.3.18
+opencv-python==4.2.0.32
 Pillow==5.3.0
 requests==2.22.0
 tensorflow==1.13.1
